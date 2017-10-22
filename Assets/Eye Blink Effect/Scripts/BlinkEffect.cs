@@ -145,7 +145,7 @@ namespace PostProcess
 		{
 			if (state == State.Idle)
 				return;
-			
+            
 			#if UNITY_EDITOR
 			if (Application.isPlaying)
 				localTime += Time.deltaTime;
