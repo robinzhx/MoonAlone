@@ -21,9 +21,11 @@ GameObject:
   - component: {fileID: 4612825479972302}
   - component: {fileID: 33273685370262986}
   - component: {fileID: 23755716331870732}
+  - component: {fileID: 54642170762134544}
+  - component: {fileID: 136330318743854708}
   m_Layer: 0
   m_Name: Propane_Tank_Large
-  m_TagString: Untagged
+  m_TagString: Pick Up
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,3 +84,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1521213903775896}
   m_Mesh: {fileID: 4300000, guid: 98fc9a80f1406504aa6c2ea1d8d50f06, type: 3}
+--- !u!54 &54642170762134544
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1521213903775896}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &136330318743854708
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1521213903775896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.96072084
+  m_Height: 0.65448797
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.9640499}
