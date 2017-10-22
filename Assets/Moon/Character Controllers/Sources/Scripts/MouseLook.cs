@@ -60,4 +60,14 @@ public class MouseLook : MonoBehaviour {
 		if (GetComponent<Rigidbody>())
 			GetComponent<Rigidbody>().freezeRotation = true;
 	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		Debug.Log("hit1");
+		if(other.gameObject.CompareTag("Pick Up"))
+		{
+			Debug.Log("hit");
+			other.gameObject.SetActive(false);
+		}
+	}
 }
